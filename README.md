@@ -47,6 +47,7 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - girar():void, tras la interacción, la estrella rota sobre su propio eje.
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Sol
+Esta clase se encarga de definir los métodos y atributos que tienen todos los objetos Sol en el programa. Hereda de CuerpoCeleste.
 #### Atributos
   - estaMoviendose:boolean, valida que el sol está cambiando su posición (sube y baja) cuando se da click junto con tecla 'c'.
   - estaDividiendose:boolean, valida que el sol se está dividiendo en sus 4 partículas cuando se da click junto con tecla 'a'. 
@@ -57,6 +58,7 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - dividirse():void, permite que se creen 4 partículas de sol.
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Luna
+Esta clase se encarga de definir los métodos y atributos que tienen todos los objetos Luna en el programa. Hereda de CuerpoCeleste.
 #### Atributos
   - estaTemblando:boolean, valida que la luna esté temblando al usuario sacudirla (arrastrar rápidamente).
   - estaCreciendo:boolean, valida que la luna cambie su tamaño al usuario hacer click sencillo sobre ella.
@@ -67,6 +69,7 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - crecer():void, hace que la luna aumente su tamaño hasta cierto punto.
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Planeta
+Esta clase se encarga de definir los métodos y atributos que tienen todos los objetos Planeta en el programa. Hereda de CuerpoCeleste.
 #### Atributos
   - estaCreandoPlaneta:boolean, valida que se cree un nuevo planeta al colisionar dos planetas distintos.
   - estaCreandoEstrellas:boolean, valida que se creen 3 estrellas al hacer click+spacebar en un planeta.
