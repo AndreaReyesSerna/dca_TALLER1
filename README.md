@@ -5,17 +5,17 @@
 Esta clase se encarga de acceder a información del resto de clases para ejecutar los métodos y conexiones entre cada objeto e interacciones.
 
 #### Atributos
-  -app:PApplet
+- app:PApplet
 #### Métodos
 - Logica(PApplet)
 - pintar():void
-- click():void
-- soltarClick():void
-- presionarTecla():void
-- soltarTecla():void
-- arrastrar():void
-- colisionar():void
-- modificarTexto(String):void
+- click():void, se encarga de las interacciones que tengan que ver con el uso del click.
+- soltarClick():void, se encarga de las interacciones que tengan que ver con soltar el click.
+- presionarTecla():void, permite el uso de teclas específicas para cada interacción.
+- soltarTecla():void, se encarga de las interacciones que tengan que ver con soltar unja tecla.
+- arrastrar():void, cada objeto se puede arrastrar, independientemente de si su interacción tiene que ver con eso.
+- colisionar():void, permite que dos planetas se junten y colisionen para crear un planeta nuevo.
+- modificarTexto(String):void, permite que cada interacción haga un cambio en el txt.
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### CuerpoCeleste
 Esta es la clase padre de los 4 elementos que el usuario puede manipular. Los cuatro elementos corresponden a las clases Estrella, Sol, Luna y Planeta. 
@@ -32,8 +32,8 @@ Esta es la clase padre de los 4 elementos que el usuario puede manipular. Los cu
   - pintar():void, método que se sobreescribe en cada clase que hereda de ésta, porque cada uno se pinta de manera diferente.
   - setX(float):void
   - setY(float):void 
-  - getX():float, 
-  - getY():float, 
+  - getX():float
+  - getY():float
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Estrella
 Esta clase se encarga de definir los métodos y atributos que tienen todos los objetos Estrella en el programa. Hereda de CuerpoCeleste.
@@ -42,7 +42,7 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - estaTitilando:boolean, valida que la estrella esté titilando. Sucede cuando se hace click sostenido por 4 segs. sobre la estrella.
 #### Métodos
   - Estrella(), constructor de la clase Estrella.
-  - pintar():void
+  - pintar():void, usando shape(), se pinta la estrella de 5 puntas.
   - titilar():void, permite que tras la interacción, la estrella cambie su opacidad y parezca que titila.
   - girar():void, tras la interacción, la estrella rota sobre su propio eje.
 ----------------------------------------------------------------------------------------------------------------------------------------
@@ -52,9 +52,9 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - estaDividiendose:boolean, valida que el sol se está dividiendo en sus 4 partículas cuando se da click junto con tecla 'a'. 
 #### Métodos
   - Sol(), constructor de la clase Sol.
-  - pintar():void,
-  - mover():void,
-  - dividirse():void,
+  - pintar():void, usando elipses concentricas de diferentes colores se pinta el sol.
+  - mover():void, permite el movimiento (subir y bajar) del sol.
+  - dividirse():void, permite que se creen 4 partículas de sol.
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Luna
 #### Atributos
@@ -62,9 +62,9 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - estaCreciendo:boolean, valida que la luna cambie su tamaño al usuario hacer click sencillo sobre ella.
 #### Métodos
   - Luna(), constructor de la clase Luna.
-  - pintar():void
-  - temblar():void
-  - crecer():void
+  - pintar():void, pinta elipses de diferentes tamaños para crear una Luna.
+  - temblar():void, hace que la luna se mueve en tramos cortos.
+  - crecer():void, hace que la luna aumente su tamaño hasta cierto punto.
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Planeta
 #### Atributos
@@ -72,7 +72,7 @@ Esta clase se encarga de definir los métodos y atributos que tienen todos los o
   - estaCreandoEstrellas:boolean, valida que se creen 3 estrellas al hacer click+spacebar en un planeta.
 #### Métodos
   - Planeta(), constructor de la clase Planeta.
-  - pintar():void,
+  - pintar():void, pinta elipses de diferentes tamaños para crear un planeta.
   - nuevoPlaneta():void, se encarga de hacer desaparecer los dos planetas al colisionar y que se cree uno nuevo en su lugar. 
   - crearEstrellas():void, se encarga de hacer desaparecer el planeta con la interacción y poner en su lugar 4 estrellas.
 
