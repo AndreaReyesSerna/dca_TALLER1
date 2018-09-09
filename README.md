@@ -6,3 +6,4 @@ Esta es la clase padre de los 4 elementos que el usuario puede manipular.
 ### Sol:
 ### Luna:
 ### Planeta:
+![GitHub Logo](https://raw.githubusercontent.com/AndreaReyesSerna/dca_TALLER1/master/Taller%201%20UML.png)
