@@ -4,10 +4,10 @@
 Esta es la clase padre de los 4 elementos que el usuario puede manipular. Los cuatro elementos corresponden a las clases Estrella, Sol, Luna y Planeta. 
 
 #### Atributos
-  - x:float
-  - y:float
-  - tam:int
-  - color:int
+  - * x:float *, se refiere a la posición en x de cualquier objeto que herede de esta clase    
+  - y:float, se refiere a la posición en y de cualquier objeto que herede de esta clase
+  - tam:int, algunos objetos que heredan de esta clase necesitan un tamaño para pintarse
+  - color:int, cada objeto que hereda de esta clase tiene un color propio
   - app:PApplet
 
 #### Métodos
