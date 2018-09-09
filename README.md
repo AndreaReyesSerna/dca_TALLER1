@@ -33,7 +33,7 @@ Esta es la clase padre de los 4 elementos que el usuario puede manipular. Los cu
   - mover():void
   - dividirse():void
 ----------------------------------------------------------------------------------------------------------------------------------------
-### Luna
+### Lunas
 #### Métodos
   - pintar():void
   - Estrella()
