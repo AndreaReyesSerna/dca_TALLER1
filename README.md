@@ -2,8 +2,23 @@
 ## Descripción de las Clases:
 ### CuerpoCeleste
 Esta es la clase padre de los 4 elementos que el usuario puede manipular. Los cuatro elementos corresponden a las clases Estrella, Sol, Luna y Planeta. 
-  ####Atributos:
-  *x:float
+
+#### Atributos:
+  - x:float
+  - y:float
+  - tam:int
+  - color:int
+  - app:PApplet
+
+#### Métodos:
+  - CuerpoCeleste(PApplet)
+  - arrastrar():void
+  - pintar():void
+  - setX(float):void
+  - setY(float):void
+  - getX():float
+  - getY():float
+------------------------------------------------------------------------------------------------------------------------------------------  
 ### Estrella
 Hereda de CuerpoCeleste
 ### Sol
