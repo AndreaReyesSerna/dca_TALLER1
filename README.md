@@ -20,27 +20,44 @@ Esta es la clase padre de los 4 elementos que el usuario puede manipular. Los cu
   - getY():float
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Estrella
+#### Atributos
+  - estaRotando:boolean
+  - estaTitilando:boolean
 #### Métodos
-  - pintar():void
   - Estrella()
+  - pintar():void
   - titilar():void
   - girar():void
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Sol
+#### Atributos
+  - estaMoviendose:boolean
+  - estaDividiendose:boolean
 #### Métodos
-  - pintar():void
   - Sol()
+  - pintar():void
   - mover():void
   - dividirse():void
 ----------------------------------------------------------------------------------------------------------------------------------------
-### Lunas
+### Luna
+#### Atributos
+  - estaTemblando:boolean
+  - estaCreciendo:boolean
 #### Métodos
+  - Luna()
   - pintar():void
-  - Estrella()
   - temblar():void
   - crecer():void
 ----------------------------------------------------------------------------------------------------------------------------------------
 ### Planeta
+#### Atributos
+  - estaCreandoPlaneta:boolean
+  - estaCreandoEstrellas:boolean
+#### Métodos
+  - Planeta()
+  - pintar():void
+  - nuevoPlaneta():void
+  - crearEstrellas():void
 
 ---------------------------------------------------------------------------------------------------------------------------------------- 
 
